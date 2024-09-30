@@ -34,12 +34,12 @@ public class ResourceManager {
     public TextureAtlas atlas;
 
     // ITEMS
-    public static TextureAtlas ITEMS_TEXTURE_ATLAS = new TextureAtlas(ITEMS_TEXTURE_ATLAS_PATH);
+    public static TextureAtlas ITEMS_TEXTURE_ATLAS = new TextureAtlas(Gdx.files.internal(ITEMS_TEXTURE_ATLAS_PATH));
 
     // STATUS
     private final static String STATUSUI_TEXTURE_ATLAS_PATH = "skins/statusui.atlas";
     private final static String STATUS_UI_SKIN_PATH = "skins/statusui.json";
-    public static TextureAtlas STATUS_UI_TEXTURE_ATLAS = new TextureAtlas(STATUSUI_TEXTURE_ATLAS_PATH);
+    public static TextureAtlas STATUS_UI_TEXTURE_ATLAS = new TextureAtlas(Gdx.files.internal(STATUSUI_TEXTURE_ATLAS_PATH));
     public static Skin STATUS_UI_SKIN = new Skin(Gdx.files.internal(STATUS_UI_SKIN_PATH), STATUS_UI_TEXTURE_ATLAS);
 
     // IMAGES
